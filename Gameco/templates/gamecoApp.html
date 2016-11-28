@@ -1,0 +1,24 @@
+<ion-view title="GamecoApp" id="page1" style="background-color:white;">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-ios-game-controller-b"></button>
+  </ion-nav-buttons>
+  <ion-content padding="false" class="has-header">
+    <h4 id="gamecoApp-heading2" style="color:black;">Selecciona Local:</h4>
+    <div ng-controller="gamecoAppCtrl">
+    <form id="gamecoApp-form4" class="list" >
+      <label class="item item-select" id="gamecoApp-select1">
+        <span class="input-label"></span>
+        <select ng-model="mySelect" ng-change="showSelectValue(mySelect)">
+          <option ng-repeat="elemento in datos">{{elemento.nombre}}</option>
+        </select>
+      </label>
+      <a ui-sref="maquinas" id="gamecoApp-button2" style="font-weight:500;font-size:20px;" class="button button-royal  button-full icon-left ion-xbox" ng-click="showSelectValue(mySelect)">Maquinas</a>
+      <a ui-sref="totalLocal" id="gamecoApp-button3" style="font-weight:500;font-size:20px;border-radius:4px 4px 4px 4px;" class="button button-royal  button-full icon-left ion-ios-home">Total Local</a>
+      <a ui-sref="avisos" id="gamecoApp-button4" style="font-weight:500;font-size:20px;" class="button button-royal  button-block icon-left ion-clipboard">Avisos</a>
+      <a ui-sref="prestamos" id="gamecoApp-button5" style="font-weight:500;font-size:20px;" class="button button-royal  button-block icon-left ion-cash">Prestamos</a>
+    </form>
+    </div>
+    <a ui-sref="gastos" id="gamecoApp-button6" style="font-weight:600;font-size:20px;" class="button button-royal  button-block icon-left ion-social-usd">Gastos</a>
+    <a ui-sref="notas" id="gamecoApp-button7" style="font-weight:600;font-size:20px;" class="button button-royal  button-block icon-left ion-android-clipboard">Notas</a>
+  </ion-content>
+</ion-view>

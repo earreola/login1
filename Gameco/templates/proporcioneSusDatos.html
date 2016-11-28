@@ -1,0 +1,23 @@
+<ion-view title="Proporcione sus datos" id="page10">
+  <ion-nav-buttons side="left" class="has-header">
+    <button class="button button-icon icon ion-android-person"></button>
+  </ion-nav-buttons>
+  <ion-content padding="false" class="has-header">
+    <form id="proporcioneSusDatos-form11" class="list" ng-controller="proporcioneSusDatosCtrl">
+      <div class="spacer" style="height: 40px;"></div>
+      <ion-list id="proporcioneSusDatos-list4">
+        <label class="item item-input" id="proporcioneSusDatos-input1">
+          <span class="input-label">Username</span>
+          <input type="text" placeholder="" ng-model="login.email">
+        </label>
+        <label class="item item-input" id="proporcioneSusDatos-input2">
+          <span class="input-label">Password</span>
+          <input type="password" placeholder="" ng-model="login.password">
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <a  ng-click="Entrar();" id="proporcioneSusDatos-button8" class="button button-stable  button-block icon-left ion-android-arrow-forward">Entrar</a>
+      <a href="#" onclick="window.open('localhost/sistema_orca/sistema/paginas/inicio', '_system', 'location=yes'); return false;" id="proporcioneSusDatos-button9" class="button button-positive  button-block button-clear">Registrarme</a>
+    </form>
+  </ion-content>
+</ion-view>
